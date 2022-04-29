@@ -1,0 +1,13 @@
+var featureNames = [];
+
+for (var i = 0; i < sigef_geojson.features.length; i++) {
+  var currentFeature = sigef_geojson.features[i];
+
+  var featureName = currentFeature.properties.rank;
+  var featureId = currentFeature.properties.nome_area;
+
+  console.log(featureId);
+  featureNames.push({ featureId: featureId, featureName : featureName });
+  
+}
+console.log(featureNames)
